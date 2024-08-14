@@ -1,0 +1,11 @@
+{
+    "plugins": [
+      ["module-resolver", {
+        "alias": {
+          "~": "./src"
+        }
+      }]
+    ]
+  }
+
+// cấu hình : khi import dễ dùng hơn
