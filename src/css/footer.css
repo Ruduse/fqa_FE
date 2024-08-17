@@ -1,0 +1,77 @@
+.footer {
+  background-color: #1c2a3b; /* Màu nền */
+  color: #ffffff; /* Màu chữ */
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-support,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer h4 {
+  color: #ffaa00; /* Màu tiêu đề */
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+}
+
+.footer-app-links img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #33475b;
+  padding-top: 10px;
+}
+
+.footer-keywords ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-keywords ul li {
+  background-color: #33475b;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
