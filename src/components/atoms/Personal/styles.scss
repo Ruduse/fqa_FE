@@ -1,0 +1,10 @@
+@import '../../../scss/base/base';
+.personal {
+  @include dFlex($gap: 10px);
+  &_avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+  }
+}

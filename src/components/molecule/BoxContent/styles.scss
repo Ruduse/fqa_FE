@@ -1,0 +1,24 @@
+@import '../../../scss/base/base';
+.boxcontent {
+  width: 100%;
+  @include dFlexCol($just: space-between);
+  &_title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  &_context {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  &_btn {
+    width: 200px;
+    padding-top: 10px;
+  }
+}
+.container_box {
+  @include dFlex($gap: 10px);
+  border-radius: 8px;
+  background-color: $whiteColor;
+  padding: 20px;
+  width: 100%;
+}

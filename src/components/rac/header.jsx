@@ -1,10 +1,11 @@
+import images from '~/assets/images';
 import '~/css/header.css';
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/path-to-logo.png" alt="FQA Logo" />
+        <img src={images.logo} alt="FQA Logo" />
       </div>
       <nav className="nav">
         <ul>

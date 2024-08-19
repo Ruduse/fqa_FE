@@ -1,0 +1,19 @@
+@import '../../../scss/base/base';
+.item {
+  color: $primaryColor;
+  @include textBody($fontSize: 16px);
+  @include dFlex($align: center, $gap: 16px);
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  &:hover {
+    color: $primaryColor;
+    text-decoration: underline;
+  }
+}
+.active {
+  background-color: $secondColor;
+  text-decoration: none !important;
+  color: $primaryColor;
+}

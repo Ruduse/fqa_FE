@@ -1,0 +1,25 @@
+@import '../../../scss/base/base';
+.answer {
+  border-radius: 8px;
+  background-color: $whiteColor;
+  width: 100%;
+  min-height: 500px;
+  padding: 16px;
+  @include dFlex($just: space-between, $gap: 20px);
+  &_left {
+    flex-grow: 1;
+  }
+  &_right {
+    min-width: 230px;
+  }
+  &_top {
+    @include dFlex($just: space-between);
+  }
+  &_select {
+    @include dFlex($gap: 10px, $align: center);
+    font-size: 16px;
+  }
+  &_question {
+    font-size: 14px;
+  }
+}

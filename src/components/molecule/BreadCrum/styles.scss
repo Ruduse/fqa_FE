@@ -1,0 +1,15 @@
+@import '../../../scss/base/base';
+
+.breadcrumb {
+  @include dFlex;
+}
+.itemcrum {
+  @include dFlex($align: center, $gap: 10px);
+  font-size: 16px;
+  line-height: 24px;
+  &:hover {
+    color: $primaryColor;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

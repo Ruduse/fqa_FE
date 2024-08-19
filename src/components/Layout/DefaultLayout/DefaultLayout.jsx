@@ -1,20 +1,22 @@
-import classNames from 'classnames/bind';
-import Header from '~/components/Layout/components/Header';
-// import Sidebar from '~/components/Layout/components/Sidebar';
 
-import styles from './DefaultLayout.module.scss';
-import Footer from '../components/Footer';
-
-const cx = classNames.bind(styles);
+import Header from '~/components/rac/header';
+import Footer from '~/components/rac/footer';
+import SideBar from '~/components/rac/SideBar';
+import { useLocation } from 'react-router-dom';
 
 function DefaultLayout({ children }) {
+  const pathCurrentPage = useLocation;
   return (
-    <div className={cx('wrapper')}>
+    <div >
       <Header />
+      <div style={{ width: "100%", display: 'flex', gap: '30px' }}>
+        <SideBar pathCurrentPage={pathCurrentPage} />
 
-      <div className={cx('container')}>
-        <Footer />
+        {children}
+
       </div>
+      <Footer />
+
     </div>
   );
 }

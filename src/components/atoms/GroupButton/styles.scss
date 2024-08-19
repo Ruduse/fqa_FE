@@ -1,0 +1,11 @@
+@import '../../../scss/base/base';
+.group {
+  @include dFlex;
+  background-color: $gray;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 8px;
+}
+.active {
+  background-color: $blackColor;
+}

@@ -1,0 +1,19 @@
+@mixin btnPrimary(
+    $bgColor: linear-gradient(90deg, $colorEnd, $colorStart),
+    $color: $whiteColor,
+    $borderColor: $whiteColor,
+    $height: 4.8rem,
+    $padding: 7px 30px,
+    $fontSize: 33px
+) {
+    @include heading($fontSize: $fontSize);
+    cursor: pointer;
+    background: $bgColor;
+    font-size: $fontSize;
+    color: $whiteColor;
+    font-weight: 700;
+    border-width: 0;
+    border-radius: 13px;
+    border-color: $borderColor;
+    padding: $padding;
+}
